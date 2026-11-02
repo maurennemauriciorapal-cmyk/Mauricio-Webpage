@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Webpage</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6eaff;
+            color: #42334c;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8e5ab5, #d58ac7);
+            color: white;
+            text-align: center;
+            padding: 45px 15px;
+        }
+
+        header h1 {
+            font-size: 35px;
+            animation: fade 2s;
+        }
+
+        nav {
+            background: #563675;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #ffbde7;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section, article, aside {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px #d5c0df;
+        }
+
+        h2 {
+            color: #8150a2;
+            border-bottom: 2px solid #e6c9f4;
+            padding-bottom: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px;
+        }
+
+        .profile {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: glow 2s infinite alternate;
+        }
+
+        .hobby-list li,
+        .routine-list li {
+            padding: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #d7bce8;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #8053a2;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f7edfc;
+        }
+
+        a {
+            color: #8053a2;
+        }
+
+        .useful-links a {
+            display: block;
+            margin: 12px 0;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #c9a6db;
+            border-radius: 8px;
+        }
+
+        button {
+            background: #8053a2;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #563675;
+        }
+
+        footer {
+            background: #563675;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px blue;
+                
+            }
+
+            to {
+                box-shadow: 0 0 30px blue;
+                transform: translateY(0);
+            }
+        }
+
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 25px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+        }
+        header {
+    text-align: center;
+}
+
+.animated-heading {
+    animation: floatHeading 3s ease-in-out infinite;
+}
+
+@keyframes floatHeading {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid hotblue;
+    box-shadow: 0 0 15px blue;
+}
+.rainbow-text {
+    animation: rainbow 3s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        color: red;
+    }
+    20% {
+        color: orange;
+    }
+    40% {
+        color: yellow;
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1 style="color: skyblue;"
+    class="rainbow-text">Welcome to My Webpage!</h1>
+    <p style="color: skyblue;">
+    My Life, My Interests, and My Journey</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#about"style="color: hotpink;">
+    About</a>
+    <a href="#hobbies"style="color: blue;">
+    Hobbies</a>
+    <a href="#routine"style="color: yellowgreen;">
+    Routine</a>
+    <a href="#websites"style="color: red;">
+    Websites</a>
+    <a href="#schedule"style="color: skyblue;">
+    Schedule</a>
+    <a href="#contact"style="color: orange;">
+    Contact</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <img class="profile"
+        src="https://external.fmnl9-1.fna.fbcdn.net/emg1/v/t13/5269688409982201298?_nc_oc=AdqKiX2JIBeGEDwDX12lQU1181AiuH8D1uMcesYn8h_8h7JG4pACki8kZvA-cVGlS2g&url=https%3A%2F%2Fi.ibb.co%2FZR9tjbHH%2Fmyphoto.png&fb_obo=1&utld=ibb.co&_nc_sid=c24604&_nc_ht=external.fmnl9-1.fna.fbcdn.net&stp=c0.5000x0.5000f_dst-emg0_p480x251_q75_tt6&ccb=18-1&_nc_gid=seuM3fU7_B-c_KA1mbZosg&_nc_map=urlgen_bucketless&_nc_ad=z-m&_nc_cid=0&_nc_zt=3&_nc_eui2=AeFZgxJ2nBsIu3i-nrfUbrA_jMUTKQRuZM-MxRMpBG5kz3lSL4WMbPtAlakwK7XPI8cGoFjhpPGHcUqXp-WJgz9K&oh=06_Q3_EAYL3F0Bf1is7Ybv12wPfSVbKC3SoUmYU51pXVdfmzJRy&oe=6AE5DFEC"
+        alt="My Profile Picture">
+        
+        <h2 style="color: blue;">
+        Hello! I'm Maurenne Mauricio Rapal</h2>
+        <p>BS Computer Science Student</p>
+        <p>Welcome to my personal webpage!</p>
+    </section>
+
+    <!-- ABOUT MY WEBSITE -->
+    <section id="about">
+        <h2 style="color: hotpink;">
+        About My Website</h2>
+
+        <p>
+            Welcome to my personal website!
+            This website is created to share information
+            about myself, my hobbies, daily routine,
+            school schedule, and useful websites.
+        </p>
+
+        <p>
+            This website also represents my creativity
+            and the knowledge I have learned in
+            HTML and CSS.
+        </p>
+    </section>
+    
+    <section class="card" id="about">
+    <h2 style="color: green;">
+    About Me</h2>
+    <p>
+      Hi! My name is Maurenne M. Rapal. I am a first-year college student taking Bachelor of Science in Computer Science (BSCS) at Wesleyan University Philippines.</p>
+      
+<p>I am a simple, friendly, and hardworking person who always dreams big and wants to achieve my goals in life. I enjoy learning new things, especially about computers and technology. I believe that every challenge is an opportunity to learn, improve, and become a better person.</p>
+
+<p>My dream is to become successful in the future, make my family proud, and build a better life. I believe that with hard work, patience, faith in God, and determination, I can achieve anything I set my mind to.</p>
+<p>My motto: "Never give up on your dreams because every small step brings you closer to success." ❤️</p>
+
+    </p>
+</section>
+
+
+    <!-- MY HOBBIES -->
+    <section id="hobbies">
+        <h2 style="color:blue;">
+        My Hobbies</h2>
+
+        <ul class="hobby-list">
+            <li>🎵 Listening to music</li>
+            <li>📱 Browsing social media</li>
+            <li>📚 Reading books</li>
+            <li>💻 Learning computer programming</li>
+            <li>🍰 Baking</li>
+            <li>🏃 Jogging</li>
+            <li>💃 tiktoking</li>
+            <li>☕ Drinking coffee</li>
+        </ul>
+    </section>
+
+    <!-- DAILY ROUTINE -->
+    <section id="routine">
+        <h2 style="color: brown;">
+        My Daily Routine</h2>
+
+        <ol class="routine-list">
+            <li>5:00 AM - Wake up</li>
+            <li>6:00 AM - Take a bath</li>
+            <li>7:00 AM - cooking breakfast</li>
+            <li>8:00 AM - cleaning house</li>
+            <li>12:00 PM - Lunch time</li>
+            <li>1:00 PM - sleeping</li>
+            <li>2:00 PM - wake and taking bath</li>
+            <li>3:00 PM - Go to school</li>
+            <li>9:00 PM - Go to home</li>
+            <li>10:30 PM -Rest and sleep</li>
+        </ol>
+    </section>
+
+     <!-- WEEKLY SCHEDULE -->
+        <section id="schedule">
+            <h2 style="color: purple;">
+            My Weekly Schedule</h2>
+
+                
+
+            <div class="table-wrapper">
+                <table>
+                    <head>
+                
+                        <tr>
+                            <th>Code</th>
+                            <th>Descriptive title</th>
+                            <TH>Unit</th>
+                            <th>Day</th>                          
+                            <th>Time</th>
+                            <th>Prof/Instructor</th>
+                        </tr>
+                    </head>              
+                        <tr>                           
+                            <td>CSCC 1</td>
+                            <td>Introduction to Computing </td> 
+                            <td>3.0</td>
+                            <td>MWF/TTH</td>
+                            <td>3:00PM 4:00PM</td>
+                            <td>Dr. Sumait</td>
+                        </tr>                        
+                        <tr>                           
+                            <td>CE 1</td>
+                            <td>Introduction to The Bible </td> 
+                            <td>3.0</td>
+                            <td>MWF</td>
+                            <td>4:00PM 5:00PM</td>
+                            <td>Ptr J.Quematon</td>
+                        </tr>                      
+                        <tr>                        
+                            <td>GE 01</td>
+                            <td> Purposive Communication </td> 
+                            <td>3.0</td>
+                            <td>MWF</td>
+                            <td>5:00PM 6:00PM</td>
+                            <td>Prof R. Fernadez</td>
+                        </tr>                     
+                        <tr>                           
+                            <td>GE 03</td>
+                            <td>Mathematics in the modern world </td> 
+                            <td>3.0</td>
+                            <td>MWF</td>
+                            <td>6:00PM 7:00PM</td>
+                            <td>Engr. R. Lorenzo</td>
+
+                        </tr>
+                   
+                        <tr>
+                            <td>CSCC 2</td>
+                            <td>Programming 1 </td> 
+                            <td>3.0</td>
+                            <td>MWF</td>
+                            <td>7:00PM 9:00PM</td>
+                            <td>Sir J.Pena</td>
+
+                        </tr>
+                       
+                        <tr>
+                            <td>NSTP</td>
+                            <td>National Service Training Program 1</td>
+                            <td>3.0</td>
+                            <td>TUE</td>
+                            <td>7:00aM 10:00AM</td>
+                            <td>Prof M.Hugo</td>
+                        </tr>                  
+                        <tr>
+                            <td>P.E 1</td>                                                    
+                            <td>Physical Fitness</td>
+                            <td>2.0</td>
+                            <td>TUE</td>
+                            <td>10:00AM 12:00PM</td>
+                            <td>Ma'am C.Namoro</td>
+                       </tr>           
+                        <tr>                 
+                            <td>G.E 02</td>                                                  
+                            <td>Reading In Philipine History</td>
+                            <td>3.0</td>
+                            <td>TTH</td>
+                            <td>4:30PM 6:00PM</td>
+                            <td>Ma'am C.Elcano</td>
+                             </tr>                     
+                             <tr>
+                            <td>Fil 1</td>    
+                            <td>Filipino Sa Ibat-ibang Disiplina</td>                     
+                            <td>3.0</td>                         
+                            <td>TTH</td>
+                            <td>7:00PM 7:30PM</td>
+                            <td>Sir S.Pelejo</td>
+                                                       
+                </tbody>
+                </table>
+            </div>
+        </section>
+
+
+    <!-- CONTACT ME -->
+    <section id="contact">
+        <h2 style="color: green;">
+        Contact Me</h2>
+
+        <p>Feel free to contact me!</p>
+
+        <form onsubmit="sendMessage(event)">
+
+            <label>Your Name:</label>
+            <input type="text"
+            id="name"
+            placeholder="Enter your name"
+            required>
+
+            <label>Your Email:</label>
+            <input type="email"
+            id="email"
+            placeholder="Enter your email"
+            required>
+
+            <label>Your Message:</label>
+            <textarea id="message"
+            rows="5"
+            placeholder="Write your message"
+            required></textarea>
+
+            <button type="submit">Send Message</button>
+             <p style="font-size: 13px; margin-top: 12px; color: #64748b;">
+                Note: This demo form does not send messages to an email
+                or save them to a database.
+            </p>
+
+
+        </form>
+    </section>
+
+</main>
+
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+
+    alert("Thank you, " + name +
+    "! Your message form was submitted.");
+}
+</script>
+<section class="card" id="skills">
+    <h2 style="color: orange;">
+    My Skills</h2>
+    <p>💻 Basic Computer Literacy</p>
+    <p>🌐 HTML and CSS</p>
+    <p> 🍰 Baking</p>
+    <p>📚 Communication Skills</p>
+</section>
+
+ <!-- SEMANTIC HTML -->
+ <main>
+        <section id="semantic">
+            <h2 style="color: hotpink;">
+            Semantic HTML Tags</h2>
+            <p>These tags help organize webpage content.</p>
+
+            <div class="semantic-box">
+                <h3 style="color: hotpink;">
+                &lt;header&gt;</h3>
+                <p>Contains introductory content or a page heading.</p>
+            </div>
+
+            <div class="semantic-box">
+                <h3 style="color: hotpink;">
+                &lt;nav&gt;</h3>
+                <p>Contains navigation links.</p>
+            </div>
+
+            <div class="semantic-box">
+                <h3 style="color: hotpink;">
+                &lt;main&gt; and &lt;section&gt;</h3>
+                <p>Organize the main content into meaningful sections.</p>
+            </div>
+
+            <div class="semantic-box">
+                <h3 style="color: hotpink;">
+                &lt;aside&gt;</h3>
+                <p>Contains related or supplementary information.</p>
+            </div>
+
+            <div class="semantic-box">
+                <h3 style="color: hotpink;">
+                &lt;footer&gt;</h3>
+                <p>Contains closing information about the webpage.</p>
+            </div>
+        </section>
+
+    </main>
+ <!-- USEFUL WEBSITES -->
+    <section id="websites">
+        <h2>Useful Websites</h2>
+
+        <p>Here are some websites that help me learn:</p>
+
+        <div class="useful-links">
+            <a href="https://www.google.com/"
+            target="_blank">Google - Search Engine</a>
+
+            <a href="https://www.w3schools.com/"
+            target="_blank">W3Schools - Learn Coding</a>
+
+            <a href="https://www.youtube.com/"
+            target="_blank">YouTube - Educational Videos</a>
+
+            <a href="https://www.wikipedia.org/"
+            target="_blank">Wikipedia - Online Encyclopedia</a>
+
+            <a href="https://www.canva.com/"
+            target="_blank">Canva - Graphic Design</a>
+        </div>
+    </section>
+<footer>
+    <p style="color: hotpink;">
+    © 2026 My Personal Webpage</p>
+    <p style="color: hotpink;">
+   Made with ❤️ using <strong>HTML &amp; CSS</strong></p>
+</footer>
+
+<script>
+function welcome() {
+    alert("Hello! Welcome to my Personal Website! 💗");
+    
+
+}
+</script>
+
+</body>
+</html>
+
