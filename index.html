@@ -249,6 +249,23 @@
         color: purple;
     }
 }
+        .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid pink;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
     </style>
 </head>
 
@@ -283,9 +300,9 @@
 
     <!-- HOME -->
     <section class="hero" id="home">
-        <img class="profile"
- src="myphoto.jpg.jpg"
-        alt="My Profile Picture">
+        <img src="myphoto.jpg.jpg"
+        alt="My Profile Picture"
+            class="profile">
         
         <h2 style="color: blue;">
         Hello! I'm Maurenne Mauricio Rapal</h2>
